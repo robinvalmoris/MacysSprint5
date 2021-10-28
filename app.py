@@ -183,6 +183,6 @@ def notificaciones():
     return render_template('notificaciones.html')
 
 
-if __name__=='__main__':
-    app.run()
+# if __name__=='__main__':
+#     app.run()
   
