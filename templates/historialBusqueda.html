@@ -10,17 +10,55 @@
 <body>
     <nav>
         <a href="/inicio" class="nav-enlace" >Inicio</a>
-        <a href="#" class="nav-enlace" >Contáctenos</a>
+        <a href="/contactenos" class="nav-enlace" >Contáctenos</a>
         <a href="#" class="nav-enlace" >Ayuda</a>
         <a href="/producto/calificar" class="nav-enlace" >Mis compras</a>
         <a href="#" class="nav-enlace" >Mi perfil</a>
         <a href="#" class="nav-enlace" >Notificaciones</a>
         <a href="/logout" class="nav-enlace" >Logout</a>
     </nav>
-        <h1 class="productos">Productos</h1>
+
+    <h1 class="productos">Historial de Busqueda</h1>
     <div class="buscar">
         <input type="text" placeholder="Buscar" required>
     </div>
+    <nav class="nav2">
+        <a href="#" class="nav-enlace2" >Categorias</a>
+        <a href="#" class="nav-enlace2" >Lista de deseos</a>
+        <a href="#" class="nav-enlace2" >Carrito de compras</a>
+    </nav>
+
+    <img class="image4" src="{{url_for('static', filename='Imagenes/Audifonos bluetooth.webp')}}" alt="">
+    <img class="image5" src="{{url_for('static', filename='Imagenes/Nevera Coca Cola Original.jpg')}}" alt="">
+    <img class="image6" src="{{url_for('static', filename='Imagenes/Smartwatch 2.jpg')}}" alt="">
+    <img class="image4" src="{{url_for('static', filename='Imagenes/Soporte de Celular.jpg')}}" alt="">
+    <hr>
+
+    <div class="container-div">
     
+    <div class="div4">
+        <ul>
+              <p class="p-4">Audifonos Bluetooth <br> audio mejorado <br><b><br>$310.000</p></b>
+        </ul>
+    </div>
+
+    <div class="div4">
+        <ul>
+            <p class="p-4">Nevera de Coca Cola <br> <br>Original<b><br>$599.900</p></b>
+        </ul>
+    </div>
+    <div class="div4">
+        <ul>
+            <p class="p-4">Smartwatch T20<br> Bateria de 2000mh <br><b><br>$418.500</p></b>
+        </ul>
+    </div>
+    <div class="div4">
+        <ul>
+            <p class="p-4">Soporte de carga inalámbrica <br>Carga rápida<br><b><br>$179.999</p></b>
+        </ul>
+     </div>
+
+    </div>
+
 </body>
 </html>
