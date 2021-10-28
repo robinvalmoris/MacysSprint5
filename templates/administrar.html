@@ -8,20 +8,24 @@
     <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
 </head>
 <body>
-	    <nav>
+	<nav>
         <a href="/inicio" class="nav-enlace" >Inicio</a>
         <a href="#" class="nav-enlace" >Ayuda</a>
         <a href="/administrar" class="nav-enlace" >Administrar</a>
         <a href="#" class="nav-enlace" >Mi perfil</a>
         <a href="#" class="nav-enlace" >Notificaciones</a>
-        <a action="{{ url_for('logout')}}" href="" class="nav-enlace" >Logout</a>
+        <a href="/logout" class="nav-enlace" >Logout</a>
     </nav>
-
+    <nav>
+    <a href="/add/producto" class="nav-enlace" >Añadir producto</a>
+    <a href="/producto/eliminar" class="nav-enlace" >Eliminar producto</a>
+    <a href="/producto/editar" class="nav-enlace" >Editar producto</a>
+    <a href="/comentarios" class="nav-enlace" >Comentarios</a>
+    </nav>
     <div class="buscar">
-        <h1 class="admin">Bienvenido, admin.</h1>
+        <h3>Bienvenido, {{ session['username'] }}: {{ session['rol'] }}</h3>
     </div>
-
-        <nav class="nav2">
+    <nav class="nav2">
         <a href="#" class="nav-enlace2" >Último año</a>
         <a href="#" class="nav-enlace2" >Último mes</a>
         <a href="#" class="nav-enlace2" >Última semana</a>

@@ -142,6 +142,47 @@ def comentarios():
     #TODO
     return render_template('comentarios.html')
 
+@app.route('/historial/busqueda', methods=('GET', 'POST'))
+def historialBusqueda():
+    #TODO
+    return render_template('historialBusqueda.html')
+
+@app.route('/ayuda', methods=('GET', 'POST'))
+def ayuda():
+    #TODO
+    return render_template('ayuda.html')
+
+@app.route('/carrito/compras', methods=('GET', 'POST'))
+def carritoCompras():
+    #TODO
+    return render_template('carritoCompras.html')
+
+@app.route('/categorias', methods=('GET', 'POST'))
+def categorias():
+    #TODO
+    return render_template('categorias.html')
+
+@app.route('/contactenos', methods=('GET', 'POST'))
+def contactenos():
+    #TODO
+    return render_template('contactenos.html')
+
+@app.route('/miperfil', methods=('GET', 'POST'))
+def miPerfil():
+    #TODO
+    return render_template('miPerfil.html')
+
+@app.route('/miscompras', methods=('GET', 'POST'))
+def misCompras():
+    #TODO
+    return render_template('misCompras.html')
+
+@app.route('/notificaciones', methods=('GET', 'POST'))
+def notificaciones():
+    #TODO
+    return render_template('notificaciones.html')
+
+
 if __name__=='__main__':
     app.run()
     # app.run(debug=True)
