@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}">
 </head>
 <body>
-    
+    <nav>
+    <a href="/inicio" class="nav-enlace" >Inicio</a>
+    <a href="/ayuda" class="nav-enlace" >Ayuda</a>
+    <a href="/miperfil" class="nav-enlace" >Mi perfil</a>
+    <a href="/notificaciones" class="nav-enlace" >Notificaciones</a>
+    <a href="/logout" class="nav-enlace" >Logout</a>
+</nav>
+    <div class="buscars">
+    <h1>Bienvenido, {{ session['username'] }}</h1> 
+</div>
+    <h1 class="productos">Mi perfil</h1>
+    <h2 class="compras">COMPRAS</h2><br>
+    <a href="#" class="nav-enlace"> Información personal</a>
+    <a href="#" class="nav-enlace"> Preguntas</a>
+    <a href="#" class="nav-enlace"> Mis compras</a>
+    <a href="#" class="nav-enlace"> Información de compras</a><br>
+    <h2 class="compras">VENTAS</h2><br>
+    <a href="#" class="nav-enlace">Resumen</a>
+    <a href="#" class="nav-enlace">Novedades</a>
+    <a href="#" class="nav-enlace">Publicaciones</a>
+    <a href="#" class="nav-enlace"> Publicidad</a>
+    <a href="#" class="nav-enlace"> Preguntas</a>
+    <a href="#" class="nav-enlace"> Ventas</a>
+    <h2 class="compras">FACTURACIÓN</h2><br>
+    <a href="#" class="nav-enlace">Facturación</a>
+    <a href="#" class="nav-enlace">Reputación</a>       
 </body>
 </html>
