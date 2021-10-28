@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
+</head>
+<body>
+    <nav>
+        <a href="/inicio" class="nav-enlace" >Inicio</a>
+        <a href="#" class="nav-enlace" >Contáctenos</a>
+        <a href="#" class="nav-enlace" >Ayuda</a>
+        <a href="#" class="nav-enlace" >Carrito de compras</a>
+        <a href="/registro" class="nav-enlace" >Registro</a>
+        <a href="/login" class="nav-enlace" >Login</a>
+    </nav>
+    <h1>Registro</h1> 
+    <form
+    action="{{ url_for('registro')}}"
+    method="POST"
+    name="formRegistro"
+    onSubmit="validar_formulario();">
+    <p>
+    Rol:
+    <select name="role">
+        <option value="cliente" selected>Cliente</option>
+        <option value="administrador">Administrador</option>
+        <option value="superadministrador">Superadministrador</option>
+    </select>
+    </p>
+    <p>
+    Nombre Completo:
+    <input type="text" id="fullname" name="fullname" required />
+    </p>
+    <p>
+    Username:
+    <input minlength="7" type="text" id="username" name="username" required />
+    </p>
+    <p>
+    Contraseña:
+    <input minlength="8" type="password" id="password" name="password" required />
+    </p>
+    <p>
+    Celular:
+    <input minlength="10" maxlength="10" type="number" id="phonenumber" name="phonenumber" required />
+    </p>
+    <p>
+    Correo:
+    <input type="email" id="email" name="email" required />
+    </p>
+    <p>
+    Ciudad:
+    <input type="text" id="city" name="city" required />
+    </p>
+    <p>
+    Dirección:
+    <input type="text" id="address" name="address" required />
+    </p>
+    <p>
+    Información adicional:
+    <input type="text" id="aditional_information" name="aditional_information" />
+    </p>
+    <button type="Registrarse" value="Registrarse">Registrarse</button>
+
+</body>
+</html>

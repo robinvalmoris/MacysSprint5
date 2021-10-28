@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
+</head>
+<body>
+	    <nav>
+        <a href="/inicio" class="nav-enlace" >Inicio</a>
+        <a href="#" class="nav-enlace" >Ayuda</a>
+        <a href="/administrar" class="nav-enlace" >Administrar</a>
+        <a href="#" class="nav-enlace" >Mi perfil</a>
+        <a href="#" class="nav-enlace" >Notificaciones</a>
+        <a action="{{ url_for('logout')}}" href="" class="nav-enlace" >Logout</a>
+    </nav>
+
+    <div class="buscar">
+        <h1 class="admin">Bienvenido, admin.</h1>
+    </div>
+
+        <nav class="nav2">
+        <a href="#" class="nav-enlace2" >Último año</a>
+        <a href="#" class="nav-enlace2" >Último mes</a>
+        <a href="#" class="nav-enlace2" >Última semana</a>
+        <a href="#" class="nav-enlace2" >Último día</a>
+    </nav>
+    <div class="ventas">
+
+    	<div class="imagen-p">
+        <p class="p-enlace">Ventas totales</p>
+        <img class="imagex" src="{{url_for('static', filename='Imagenes/grafo.png')}}" alt="" style= "margin-left: 28%;">
+
+    </div>
+    <div class="imagen-p">
+        <p class="p-enlace">Ingresos totales</p>
+            <div class="texto">
+            <b><p>$XXXXXXXXXXX</p></b>
+        </div>
+     </div>
+
+     <div class="imagen-p">
+        <p class="p-enlace">Top Categorias</p>
+        <img class="imagex" src="{{url_for('static', filename='Imagenes/ventas.png')}}" alt="" style= "margin-left: 28%;">
+    </div>
+      <div class="imagen-pa">
+        <p class="p-enlace">Productos más vendidos</p>
+       <img class="imagex" src="{{url_for('static', filename='Imagenes/lineal.png')}}" alt="" style= "margin-left: 28%;">
+    </div>
+    </div>
+      <section class="recientes">
+      	<h2 class="h2-sec">CLIENTES RECIENTES</h2>
+
+        <nav class="nav3">
+        <a href="#" class="nav-enlace2" >Nombre</a>
+        <a href="#" class="nav-enlace2" >Fecha</a>
+        <a href="#" class="nav-enlace2" >Ciudad de origen</a>
+    </nav>
+    <div class="container-div">
+    	
+           <div class="div4">
+          	<ul>
+          		<p class="p-4">Victor Ugarte</p>
+          		<p class="p-4">Samantha Rojas</p>
+          		<p class="p-4">Raúl Pérez</p>
+          	</ul>
+          </div>
+
+          <div class="div4">
+                    	<ul>
+          		<p class="p-4">30/08/2020</p>
+          		<p class="p-4">20/01/2021</p>
+          		<p class="p-4">25/07/2021</p>
+          	</ul>
+          	 </div>
+                     <div class="div4">
+                    	<ul>
+          		<p class="p-4">Medellín</p>
+          		<p class="p-4">Bogotá</p>
+          		<p class="p-4">Cartagena</p>
+          	</ul>
+          	 </div>
+           <div class="div4">
+                    	<ul>
+          		<p class="p-5">Opciones</p>
+          		<p class="p-5">Opciones</p>
+          		<p class="p-5">Opciones</p>
+          	</ul>
+          	 </div>
+          	            <div class="div4">
+                    	<ul>
+          		<p class="p-5">Detalles</p>
+          		<p class="p-5">Detalles</p>
+          		<p class="p-5">Detalles</p>
+          	</ul>
+          	 </div>
+
+    </div>
+
+      </section>
+</body>
+</html>

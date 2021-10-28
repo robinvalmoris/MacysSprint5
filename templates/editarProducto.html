@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
+</head>
+<body>
+    <nav>
+        <a href="/inicio" class="nav-enlace" >Inicio</a>
+        <a href="#" class="nav-enlace" >Ayuda</a>
+        <a href="/administrar" class="nav-enlace" >Administrar</a>
+        <a href="#" class="nav-enlace" >Mi perfil</a>
+        <a href="#" class="nav-enlace" >Notificaciones</a>
+        <a action="{{ url_for('logout')}}" href="" class="nav-enlace" >Logout</a>
+    </nav>
+    <h1 class="productos">Productos</h1>
+    <div class="buscar">
+        <input type="text" placeholder="Buscar" required>
+    </div>
+    <nav class="nav2">
+        <a href="/add/producto" class="nav-enlace2" >Añadir producto</a>
+        <a href="/producto/eliminar" class="nav-enlace2" >Eliminar producto</a>
+        <a href="/producto/editar" class="nav-enlace2" >Editar producto</a>
+        <a href="/comentarios" class="nav-enlace2" >Comentarios</a>
+    </nav>
+    <h3>¿Qué deseas hacer? Por favor elije una opción del menú.</h3>
+    <h2>Editar producto</h2>
+    <h2>Celular Hisense F18 color negro</h2>
+
+    <section class="caracteristicas">
+        <img class="imagecentral" src="{{url_for('static', filename='Imagenes/Celular.webp')}}" alt="" style= "margin-left: 30%;">
+        <p>Altura:</p>
+        <p>
+            <input type="text" id="Heigth" name="Heigth">
+        </p>
+        <p>Anchura:</p>
+        <p>
+            <input type="text" id="Width" name="Width">
+        </p>
+        <p>Profundidad:</p>
+        <p>
+            <input type="text" id="Deep" name="Deep">
+        </p>
+    </section>
+    <section class="caracteristicas2">
+        <p>Color</p>
+        <p>
+            <input type="text" id="Colour" name="Colour">
+        </p>
+        <p>Precio</p>
+        <p>
+            <input type="text" id="Price" name="Price">
+        </p>
+        <p>Cantidad</p>
+        <p>
+            <input type="text" id="Amount" name="Amount">
+        </p>
+    </section>
+    <button class="boton">Editar y confirmar</button>
+    <div class="buscarproducto2">
+        <input type="text" placeholder="Busque su producto" required>
+    </div>
+    <img class="image8" src="{{url_for('static', filename='Imagenes/Bicicleta.jpg')}}" alt="">
+    <img class="image9" src="{{url_for('static', filename='Imagenes/Carrito Hot Wheels.jpg')}}" alt="">
+    <img class="image10" src="{{url_for('static', filename='Imagenes/Pesa Rusa Plastico.jpg')}}" alt="">
+    <img class="image11" src="{{url_for('static', filename='Imagenes/Smart TV.jpg')}}" alt="">
+    <section class="contenedor-producto flex text-center">
+        <div class="columna-producto">
+            <h5>Bicicleta</h5>
+            <hr>
+            <p>Color negro/rojo</p>
+            <hr>
+            <b><p class="precio" >$1.000.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5>Carrito Hot Wheels</h5>
+            <hr>
+            <p>Color Azul</p>
+            <hr>
+            <b><p class="precio" >$80.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5>Pesa Rusa Plastico</h5>
+            <hr>
+            <p>8kg - Color negro</p>
+            <hr>
+            <b><p class="precio" >$200.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5>Smart TV</h5>
+            <hr>
+            <p>Color gris</p>
+            <hr>
+            <b><p class="precio" >$3.000.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
+</head>
+<body>
+    <nav>
+        <a href="/inicio" class="nav-enlace" >Inicio</a>
+        <a href="#" class="nav-enlace" >Ayuda</a>
+        <a href="/administrar" class="nav-enlace" >Administrar</a>
+        <a href="#" class="nav-enlace" >Mi perfil</a>
+        <a href="#" class="nav-enlace" >Notificaciones</a>
+        <a action="{{ url_for('logout')}}" href="" class="nav-enlace" >Logout</a>
+    </nav>
+    <h1 class="Comentarios">Comentarios</h1>
+    <div class="buscar">
+        <input type="text" placeholder="Buscar" required>
+    </div>
+    <nav class="nav2">
+        <a href="/add/producto" class="nav-enlace2" >Añadir producto</a>
+        <a href="/producto/eliminar" class="nav-enlace2" >Eliminar producto</a>
+        <a href="/producto/editar" class="nav-enlace2" >Editar producto</a>
+        <a href="/comentarios" class="nav-enlace2" >Comentarios</a>
+    </nav>
+        
+    <h2>Por favor seleccione un comentario de la lista</h2>
+
+    <section class="contenedor-comentario bloque text-center">
+        <div class="Comentario">
+            <h5>Pedro Perez</h5>
+            <p>El celular tiene buenas prestaciones y es muy fácil de usar.</p>
+            <button class="boton">Administrar</button>
+        </div>
+        <hr>
+      
+        <div class="columna-comentario">
+            <h5>Maria Ramirez</h5>
+            <p>Me gusta mucho el desempeño de la bicileta, la recomiendo.</p>
+            <button class="boton">Administrar</button>
+        </div>
+        <hr>
+        <div class="columna-comentario">
+            <h5>David Silva</h5>
+            <p>Muy buena pesa, tiene buen agarre en las manos y no se desliza. Pero no me gusta el precio, pienso que es excesivo </p>
+            <button class="boton">Administrar</button>
+        </div>
+        <hr>
+        <div class="columna-comentario">
+            <h5>Sara Ocampo</h5>
+            <p>Fueron rápidos con la entrega del Smart TV, funciona muy bien.</p>
+            <button class="boton">Administrar</button>
+        </div>
+    </section>
+    <button class="boton2">Atras</button>
+</body>
+</html>

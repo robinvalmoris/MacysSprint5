@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
+</head>
+<body>
+  <nav>
+    <a href="/inicio" class="nav-enlace" >Inicio</a>
+    <a href="#" class="nav-enlace" >Contáctenos</a>
+    <a href="#" class="nav-enlace" >Ayuda</a>
+    <a href="#" class="nav-enlace" >Carrito de compras</a>
+    <a href="/registro" class="nav-enlace" >Registro</a>
+    <a href="/login" class="nav-enlace" >Login</a>
+</nav>
+<nav>
+  <a href="/add/producto" class="nav-enlace1" >Añadir producto</a>
+  <a href="/producto/editar" class="nav-enlace1" >Editar producto</a>
+  <a href="/producto/eliminar" class="nav-enlace1" >Eliminar producto</a>
+  <a href="/producto/calificar" class="nav-enlace1" >Calificación de producto</a>
+  <a href="/administrar" class="nav-enlace1" >Administrar</a>
+  <a href="/lista/deseos" class="nav-enlace1" >Lista de deseos</a>
+  <a href="/comentarios" class="nav-enlace1" >Comentarios</a>
+</nav>
+  <body>
+    <h1>Login</h1>
+    <section class="content">
+      {% for message in get_flashed_messages() %}
+      <div class="flash">{{ message }}</div>
+      {% endfor %}
+    </section>
+    <form
+      action="{{ url_for('login')}}"
+      method="post"
+      name="formRegistro"
+      onSubmit="validar_formulario();">
+      <p>
+        Usuario:
+        <input type="text" id="username" name="username" placeholder="Por favor ingrese su usuario" required />
+      </p>
+      <p>
+        Contraseña:
+        <input type="password" id="password" name="password" placeholder="Por favor ingrese su contraseña" required />
+      </p>
+      <p>
+        ¿Olvidó su contraseña?
+      </p>
+      <button type="submit" value="Ingresar">Ingresar</button>
+      <button type="submit" value="registrarse">Registrarse</button>
+    </form>
+  </body>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
+</head>
+<body>
+    <nav>
+        <a href="/inicio" class="nav-enlace" >Inicio</a>
+        <a href="#" class="nav-enlace" >Ayuda</a>
+        <a href="/administrar" class="nav-enlace" >Administrar</a>
+        <a href="#" class="nav-enlace" >Mi perfil</a>
+        <a href="#" class="nav-enlace" >Notificaciones</a>
+        <a action="{{ url_for('logout')}}" href="" class="nav-enlace" >Logout</a>
+    </nav>
+    <h1 class="productos">Productos</h1>
+    <div class="buscar">
+        <input type="text" placeholder="Buscar" required>
+    </div>
+    <nav class="nav2">
+        <a href="/add/producto" class="nav-enlace2" >Añadir producto</a>
+        <a href="/producto/eliminar" class="nav-enlace2" >Eliminar producto</a>
+        <a href="/producto/editar" class="nav-enlace2" >Editar producto</a>
+        <a href="/comentarios" class="nav-enlace2" >Comentarios</a>
+    </nav>
+    <h3>¿Qué deseas hacer? Por favor elije una opción del menú.</h3>
+    <h2>¿Eliminar producto?</h2>
+    <h2>Portatil Hp - COD 15431</h2>
+    
+    <section class="caracteristicas">
+        <img class="imagecentral" src="{{url_for('static', filename='Imagenes/Portatil.jpeg')}}" alt="" style= "margin-left: 30%;">
+        <b><p>Altura:</p></b>
+        <p>
+            20 CM
+        </p>
+        <b><p>Anchura:</p></b>
+        <p>
+            40 CM
+        </p>
+        <b><p>Profundidad:</p></b>
+        <p>
+            15 CM
+        </p>
+    </section>
+    <section class="caracteristicas2">
+        <b><p>Color</p></b>
+        <p>
+            Negro
+        </p>
+        <b><p>Precio</p></b>
+        <p>
+            $1.800.000
+        </p>
+        <b><p>Cantidad</p></b>
+        <p>
+            1   
+        </p>
+    </section>
+    <button class="boton">Eliminar</button>
+    <div class="buscarproducto2">
+        <input type="text" placeholder="Busque su producto" required>
+    </div>
+    <img class="image12" src="{{url_for('static', filename='Imagenes/Tablet.jpg')}}" alt="">
+    <img class="image13" src="{{url_for('static', filename='Imagenes/Llanta.jpg')}}" alt="">
+    <img class="image14" src="{{url_for('static', filename='Imagenes/Collar.jpg')}}" alt="">
+    <img class="image15" src="{{url_for('static', filename='Imagenes/Funda para celular.webp')}}" alt="">
+    <section class="contenedor-producto flex text-center">
+        <div class="columna-producto">
+            <h5>Tablet</h5>
+            <hr>
+            <p>Color negro</p>
+            <hr>
+            <b><p class="precio" >$580.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5>Llanta Michellin</h5>
+            <hr>
+            <p>Color negro</p>
+            <hr>
+            <b><p class="precio" >$1.700.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5>Collar para mujer</h5>
+            <hr>
+            <p>Color dorado</p>
+            <hr>
+            <b><p class="precio" >$620.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5> Funda para Celular</h5>
+            <hr>
+            <p>Color transparente/Negro</p>
+            <hr>
+            <b><p class="precio" >$25.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+    </section>
+</body>
+</html>

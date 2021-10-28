@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
+</head>
+<body>
+    <nav>
+        <a href="/inicio" class="nav-enlace" >Inicio</a>
+        <a href="#" class="nav-enlace" >Contáctenos</a>
+        <a href="#" class="nav-enlace" >Ayuda</a>
+        <a href="/producto/calificar" class="nav-enlace" >Mis compras</a>
+        <a href="#" class="nav-enlace" >Mi perfil</a>
+        <a href="#" class="nav-enlace" >Notificaciones</a>
+        <a action="{{ url_for('logout')}}" href="" class="nav-enlace" >Logout</a>
+    </nav>
+    <h1 class="productos">Productos</h1>
+    <div class="buscar">
+        <input type="text" placeholder="Buscar" required>
+    </div>
+    <nav class="nav2">
+        <a href="#" class="nav-enlace2" >Categorias</a>
+        <a href="#" class="nav-enlace2" >Historial de búsqueda</a>
+        <a href="/lista/deseos" class="nav-enlace2" >Lista de deseos</a>
+        <a href="#" class="nav-enlace2" >Carrito de compras</a>
+    </nav>
+    <h2>Calificación de producto</h2>
+    <h2> ¡Hola! En una escala del 0 al 10 ¿Qué tan probable es que recomiendes este Producto?</h2>
+    
+    <img class="imagecentral" src="{{url_for('static', filename='Imagenes/Camara.jpg')}}" alt="" style= "margin-left: 30%;">
+    
+    <b><p>Nada probable = 1<p></b>
+    <b><p>Muy probable = 10<p></b>
+    <input type="text" id="Heigth" name="Heigth">
+    <button>Enviar</button>        
+    <h4>Productos que te pueden interesar</h4>
+    <img class="image16" src="{{url_for('static', filename='Imagenes/Camara Fujifilm.jpg')}}" alt="">
+    <img class="image17" src="{{url_for('static', filename='Imagenes/Canon EOS.jpg')}}" alt="">
+    <img class="image18" src="{{url_for('static', filename='Imagenes/Canon.jpeg')}}" alt="">
+    <img class="image19" src="{{url_for('static', filename='Imagenes/Sony Alpha 9.png')}}" alt="">
+    <section class="contenedor-producto flex text-center">
+        <div class="columna-producto">
+            <h5>Cámara Fujifilm X-A7</h5>
+            <hr>
+            <p>Color gris</p>
+            <hr>
+            <b><p class="precio" >$590.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5>Cámara CANON EOS</h5>
+            <hr>
+            <p>Color negro</p>
+            <hr>
+            <b><p class="precio" >$920.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5>Cámara CANON EOS REBEL T100</h5>
+            <hr>
+            <p>Color negro</p>
+            <hr>
+            <b><p class="precio" >$850.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+        <div class="columna-producto">
+            <h5>Cámara SONY ALPHA 9</h5>
+            <hr>
+            <p>Color negro</p>
+            <hr>
+            <b><p class="precio" >$1.030.000</p></b>
+            <hr>
+            <b><a class="btn-precio" href="#">Comprar</a></b>
+        </div>
+    </section>
+</body>
+</html>

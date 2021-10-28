@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/miestilo.css')}}" />
+</head>
+<body>
+    <nav>
+        <a href="/inicio" class="nav-enlace" >Inicio</a>
+        <a href="#" class="nav-enlace" >Contáctenos</a>
+        <a href="#" class="nav-enlace" >Ayuda</a>
+        <a href="/producto/calificar" class="nav-enlace" >Mis compras</a>
+        <a href="#" class="nav-enlace" >Mi perfil</a>
+        <a href="#" class="nav-enlace" >Notificaciones</a>
+		<a action="{{ url_for('logout')}}" href="" class="nav-enlace" >Logout</a>
+    </nav>
+        <h1 class="productos">Productos</h1>
+    <div class="buscar">
+        <input type="text" placeholder="Buscar" required>
+    </div>
+        <h2>MI LISTA DE DESEOS</h2>
+
+                <nav class="nav4">
+        <a href="#" class="nav-enlace2" >Nombre del producto</a>
+        <a href="#" class="nav-enlace2" >Precio</a>
+        <a href="#" class="nav-enlace2" >Disponible</a>
+        <a href="#" class="nav-enlace2" >Agregar al carrito</a>
+    </nav>
+
+    <div class="container-div2">
+<div cont-imagen>
+	
+ <img  class="imager" src="{{url_for('static', filename='Imagenes/Series S.jpeg')}}" alt="">
+<img  class="imager" src="{{url_for('static', filename='Imagenes/Audifonos.jpg')}}" alt="">
+<img class="imager" src="{{url_for('static', filename='Imagenes/Reloj Casio.jpg')}}" alt="">
+</div>
+
+           <div class="div4">
+          	<ul>   
+          		<p class="p-4">Xbox Series S<br><br><br><br><br><br></p>
+          		<p class="p-4">Audifonos Inalámbricos Picun<br><br><br><br><br><br></p>
+          		<p class="p-4">Reloj Casio A168WEGB-1BDF</p>
+          	</ul>
+          </div>
+
+          <div class="div4">
+                    	<ul>
+          		<p class="p-4">$1.349.999<br><br><br><br><br><br></p>
+          		<p class="p-4">$120.000<br><br><br><br><br><br></p>
+          		<p class="p-4">$294.999</p>
+          	</ul>
+          	 </div>
+                     <div class="div4">
+                    	<ul>
+          		<p class="p-4">En Bodega<br><br><br><br><br><br></p>
+          		<p class="p-4">En Bodega<br><br><br><br><br><br></p>
+          		<p class="p-4">En Bodega</p>
+          	</ul>
+          	 </div>
+           <div class="div4">
+                    	<ul>
+          		<p class="p-4">Carrito<br><br><br><br><br><br></p>
+          		<p class="p-4">Carrito<br><br><br><br><br><br></p>
+          		<p class="p-4">Carrito</p>
+          	</ul>
+          	 </div>
+          	 </div>
+            <section>
+            	        <h2>Productos deseados</h2>
+    <img class="image5" src="{{url_for('static', filename='Imagenes/PC Gaming.jpg')}}" alt="">
+    <img class="image6" src="{{url_for('static', filename='Imagenes/Ventilador.jpg')}}" alt="">
+    <img class="image7" src="{{url_for('static', filename='Imagenes/Nintendo Switch.jpg')}}" alt="">
+    <img class="image8" src="{{url_for('static', filename='Imagenes/Smartwatch.jpeg')}}" alt="">
+
+                 <div class="container-div">
+    	
+           <div class="div4">
+          	<ul>
+          		<p class="p-4">PC Gaming <br>Ryzen 7, SSD (1TB) <br><b><br>$2.900.000</p></b>
+          	</ul>
+          </div>
+
+          <div class="div4">
+                    	<ul>
+          		<p class="p-4">Ventilador Simply <br>Ultra silencioso <br><b><br>$320.000</p></b>
+          	</ul>
+          	 </div>
+                     <div class="div4">
+                    	<ul>
+          		<p class="p-4">Nintendo Switch <br>32GB <br><b><br>$1.299.999</p></b>
+          	</ul>
+          	 </div>
+          	                      <div class="div4">
+                    	<ul>
+          		<p class="p-4">Smartwatch <br>Android 8.0.1.<br><b><br>$489.000</p></b>
+          	</ul>
+          	 </div>
+
+    </div>
+            </section>
+                  	<h2 class="h2-sec">Compartir en:<br><br>*Redes*</h2>
+
+
+</body>
+</html>
