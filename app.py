@@ -105,19 +105,12 @@ def inicio():
     if user_id is None:
         return redirect( url_for( 'login' ) )
     else:
-        #if (session.get( 'rol' )=='cliente'):
         return render_template('inicio.html')
 
 @app.route('/add/producto', methods=('GET', 'POST'))
 def addProducto():
     #TODO
     return render_template('addProducto.html')
-    # user_id = session.get( 'user_id' )
-    # if user_id is None:
-    #     return redirect( url_for( 'login' ) )
-    # else:
-    #     if (session.get( 'rol' )=='administrador' or 'superadministrador'):
-    #          return render_template('addProducto.html')
 
 @app.route('/producto/editar', methods=('GET', 'POST'))
 def editarProducto():
