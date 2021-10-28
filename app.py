@@ -37,8 +37,7 @@ def login():
                 flash(error)
                 print("Usuario no encontrado")
             else:
-                print("Usuario encontrado", user)
-                
+                print("Usuario encontrado", user)                
                 print(user)
                 contrasena_almacenada=user[4]
                 print(contrasena_almacenada)
@@ -151,4 +150,5 @@ def comentarios():
     return render_template('comentarios.html')
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run()
+    # app.run(debug=True)
